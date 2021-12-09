@@ -1,0 +1,14 @@
+memory and storage
+
+基本概念：
+
+存储介质：3D Xpoint
+
+intel optane DC persistent memory module：
+三种容量 ：128GB 256GB 512GB
+接口：DDR-T
+单一的optane模块，读带宽6.6GB/s   写带宽2.3GB/s
+使用模式： memory mode 和App direct mode
+memory mode：模块对内存占用量较小的应用程序影响很小； 相对于DRAM，具有较大内存占用空间的应用程序可能会出现速度变慢的情况。特点是容易采纳，无需对应用程序进行修改。
+App direct mode： 应用程序直接对optane进行读写访问；这种方式的持久内存更新操作直接绕过了内核和文件系统，可以使应用程序编程人员获得更大的性能提升。
+
