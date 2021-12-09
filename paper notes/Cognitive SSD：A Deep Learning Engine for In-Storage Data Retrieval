@@ -1,0 +1,18 @@
+Cognitive SSD: A Deep Learning Engine for In-Storage Data Retrieval
+
+问题（动机）：
+数据分析与检索是现有人工智能系统中应用最为广泛的组成部分。然而，每个请求必须经过I/O堆栈的每一层，这将在二级存储之间移动大量不相关的数据，
+DRAM和片上缓存。这将导致高响应延迟和上升的能耗。
+solution：Cognitive SSD   在闪存旁边放置了一个名为DLG-x的快速访问加速器，以实现近数据深度学习和图搜索。
+          NVMe命令扩展，实现深度学习和图搜索等功能
+          
+结果：
+    latency：Cognitive SSD相比CPU+SSD   69.9%降低
+    全系统power consumption： CPU 34.4%降低，  GPU  63.0%降低（相当性能）
+译文：
+
+1.Introduction
+
+
+
+
